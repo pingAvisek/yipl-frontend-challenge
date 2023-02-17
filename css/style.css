@@ -1,4 +1,150 @@
-body {
-  color: yellow;
-  background-color: black;
+/* Importing Mulish Font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif; /* Setting Mulish as the default font */
 }
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+  font-size: 16px; /* Setting the default font size */
+}
+
+:root {
+  --primary-color: #458ff6;
+  --secondary-color: #3772c2;
+  --white-color: #fff;
+  --dark-color: #1f1534;
+}
+
+body {
+  background-color: #f5f5f5; /* Setting the background color */
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+  cursor: default;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  font-weight: bold;
+  border-radius: 3.4375rem;
+  font-size: calc(1rem + 2px);
+  padding: 1.25rem 2.5rem;
+  transition: all 300ms ease-out;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1.4px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--white-color);
+  border: 2px solid var(--primary-color);
+}
+
+/* Starting of Navigation bar */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: calc(1rem + 2px);
+}
+
+nav .logo-section img {
+  width: 10rem;
+}
+
+nav .nav-links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav .nav-links ul li {
+  opacity: 0.5;
+}
+
+.active {
+  font-weight: bold;
+  opacity: 1 !important;
+}
+
+nav .nav-links ul li:hover {
+  font-weight: bold;
+  cursor: default;
+  opacity: 1;
+}
+
+/* Layout Shift on hover Fix */
+/* Thanks to: https://css-tricks.com/bold-on-hover-without-the-layout-shift/ */
+
+.menu {
+  --bold: 700; /* For Layout Shift Fix */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.menu-link:hover {
+  font-weight: var(--bold);
+}
+
+.menu.fix .menu-link::after {
+  content: attr(data-text);
+  content: attr(data-text) / "";
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  font-weight: var(--bold);
+}
+
+@media speech {
+  .menu.fix .menu-link::after {
+    display: none;
+  }
+}
+
+/* Hover Layout Shift Fix End */
+/* Ending of Navigation bar */
