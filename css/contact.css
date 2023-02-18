@@ -1,0 +1,70 @@
+#contact {
+  width: 50%;
+  margin: 0 auto;
+}
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.contact-header p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.left-right {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.left-right .left,
+.left-right .right {
+  width: 48%;
+}
+
+#contact label {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.contact-form input {
+  width: 100%;
+  display: block;
+  height: 2.8125rem;
+  border: 1px solid #7d7987;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 300;
+  outline: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#message {
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #7d7987;
+}
+
+.contact-form input:focus,
+#message:focus {
+  outline: none;
+  box-shadow: 0 0 5px 1px #7d7987;
+}
+
+.contact-form input,
+#message {
+  margin-bottom: 2rem;
+  margin-top: 0.4rem;
+}

@@ -44,7 +44,21 @@
     />
 
     <!-- CSS LINKING -->
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="./css/global.css" />
+
+    <!-- Components CSS -->
+    <link rel="stylesheet" href="./css/components.css" />
+
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="./css/navbar.css" />
+
+    <!-- Contact CSS -->
+    <link rel="stylesheet" href="./css/contact.css" />
+
+    <!-- Footer CSS -->
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <!-- Starting of Navbar -->
@@ -84,6 +98,148 @@
         </div>
       </nav>
     </div>
+    <!-- Ending of Navbar -->
+
+    <!-- Starting of Contact Section -->
+    <section id="contact">
+      <div class="contact-header">
+        <h1>Contact us</h1>
+        <p>Have any questions? We'd love to hear from you.</p>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <div class="left-right">
+            <div class="left">
+              <label for="name"
+                >Your Name
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder=""
+                  required
+                  minlength="3"
+                  autocomplete="off"
+              /></label>
+            </div>
+            <div class="right">
+              <label for="phone"
+                >Phone No.
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder=""
+                  required
+                  autocomplete="off"
+              /></label>
+            </div>
+          </div>
+          <label for="email">Email ID</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder=""
+            required
+            autocomplete="off"
+          />
+          <label for="message">Your message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="2"
+            rows="10"
+            placeholder=""
+            required
+            minlength="10"
+            autocomplete="off"
+          ></textarea>
+          <div class="center">
+            <button type="submit" class="btn btn-secondary">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Ending of Contact Section -->
+
+    <!-- Starting of Footer Section -->
+    <section id="footer">
+      <img
+        class="light"
+        src="./assets/images/dotted-element/element-light.png"
+        alt="left-dotted-element"
+      />
+      <img
+        class="linear"
+        src="./assets/images/dotted-element/element-linear.png"
+        alt="right-dotted-element"
+      />
+      <div class="container">
+        <footer>
+          <div class="cols">
+            <h3>
+              <!-- Inline CSS fix as the layout was not in straight line as in Figma -->
+              <img
+                style="margin-top: -10px"
+                src="./assets/images/logo-tradalgar/trafalgar-light-logo.png"
+                alt="Trafalgar Logo Missing"
+              />
+            </h3>
+            <div class="footer-para">
+              <p>
+                Trafalgar provides progressive, and affordable healthcare,
+                accessible on mobile and online for everyone
+              </p>
+              <br />
+              <p>&copy; Trafalgar PTY LTD 2020. All rights reserved</p>
+            </div>
+          </div>
+
+          <div class="cols">
+            <h3>Company</h3>
+            <p>
+              <a href="#">About</a>
+            </p>
+
+            <p>
+              <a href="#">Testimonials</a>
+            </p>
+
+            <p>
+              <a href="#">Find a doctor</a>
+            </p>
+            <p>
+              <a href="#">Apps</a>
+            </p>
+          </div>
+
+          <div class="cols">
+            <h3>Region</h3>
+            <p><a href="#">Indonesia</a></p>
+            <p>
+              <a href="#">Singapore</a>
+            </p>
+            <p><a href="#">Hongkong</a></p>
+            <p>
+              <a href="#">Canada</a>
+            </p>
+          </div>
+
+          <div class="cols">
+            <h3>Help</h3>
+            <p><a href="#">Help center</a></p>
+            <p><a href="#">Contact support</a></p>
+            <p><a href="#">Instructions</a></p>
+            <p><a href="#">How it works</a></p>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <!-- Ending of Footer Section -->
 
     <!-- JS LINKING -->
     <script src="./javascript/app.js"></script>

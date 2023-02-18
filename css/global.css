@@ -1,0 +1,73 @@
+/* Importing Mulish Font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif; /* Setting Mulish as the default font */
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+  font-size: 16px; /* Setting the default font size */
+}
+
+:root {
+  --primary-color: #458ff6;
+  --secondary-color: #3772c2;
+  --white-color: #fff;
+  --dark-color: #1f1534;
+}
+
+body {
+  background-color: #f5f5f5; /* Setting the background color */
+}
+
+*::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+a {
+  text-decoration: none;
+  cursor: default;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  color: #000;
+  line-height: 2.875;
+  /* border-bottom: 5px solid #000; */
+  /* width: 8.5rem; */
+  color: var(--dark-color);
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2.875rem;
+}
+
+h1::after {
+  content: "";
+  height: 2px;
+  width: 3.5rem;
+  background: var(--dark-color);
+  position: absolute;
+  margin: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,75 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: calc(1rem + 2px);
+}
+
+nav a {
+  color: var(--dark-color);
+}
+
+nav .logo-section img {
+  width: 10rem;
+}
+
+nav .nav-links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav .nav-links ul li {
+  opacity: 0.5;
+}
+
+nav .nav-links ul li:hover {
+  font-weight: bold;
+  cursor: default;
+  opacity: 1;
+}
+
+/* Layout Shift on hover Fix */
+/* Thanks to: https://css-tricks.com/bold-on-hover-without-the-layout-shift/ */
+
+.menu {
+  --bold: 700; /* For Layout Shift Fix */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.menu-link:hover {
+  font-weight: var(--bold);
+}
+
+.menu.fix .menu-link::after {
+  content: attr(data-text);
+  content: attr(data-text) / "";
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  font-weight: var(--bold);
+}
+
+@media speech {
+  .menu.fix .menu-link::after {
+    display: none;
+  }
+}
+/* Hover Layout Shift Fix End */
