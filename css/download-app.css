@@ -1,0 +1,34 @@
+.download-app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0;
+  position: relative;
+}
+
+.dotted-download-app {
+  position: absolute;
+  top: -7rem;
+  right: -11.2rem;
+}
+
+.download-app .download-app-img img {
+  width: 100%;
+}
+
+.download-app .download-app-text {
+  width: 75%;
+  padding: 0 10%;
+}
+
+.download-app .download-app-text p {
+  margin: -1rem 0 1rem 0;
+  color: var(--tertiary-color);
+  line-height: 1.875;
+  font-weight: 300;
+}
+
+.download-app .download-app-text h1::after {
+  margin: 0;
+}

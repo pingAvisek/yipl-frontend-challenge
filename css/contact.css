@@ -38,7 +38,7 @@
   width: 100%;
   display: block;
   height: 2.8125rem;
-  border: 1px solid #7d7987;
+  border: 1px solid var(--tertiary-color);
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 300;
@@ -54,13 +54,13 @@
   padding: 1rem;
   border-radius: 5px;
   outline: none;
-  border: 1px solid #7d7987;
+  border: 1px solid var(--tertiary-color);
 }
 
 .contact-form input:focus,
 #message:focus {
   outline: none;
-  box-shadow: 0 0 5px 1px #7d7987;
+  box-shadow: 0 0 5px 1px var(--tertiary-color);
 }
 
 .contact-form input,
