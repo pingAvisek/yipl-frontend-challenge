@@ -55,6 +55,7 @@
   text-decoration: none;
 }
 
+.blog-card a,
 .blog-card a:focus,
 .blog-card a:visited {
   color: var(--black-color);
@@ -63,7 +64,7 @@
 .blog-card .article-read-more,
 .blog-card .article-read-more:visited,
 .blog-card .article-read-more:focus {
-  color: var(--blue-color);
+  color: var(--blue-color) !important;
   margin: 1rem 0;
 }
 
