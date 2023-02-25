@@ -1,0 +1,105 @@
+.customer-say {
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 24px;
+  text-align: center;
+  padding: 2rem;
+  color: var(--white-color);
+
+  position: relative;
+}
+
+.customer-say h1 {
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 2.25rem;
+  color: var(--white-color);
+}
+
+.customer-say h1::after {
+  background: var(--white-color);
+}
+
+.customer-say .left-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer-say .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.customer-say .left img {
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 1% 0px;
+  margin-right: 2rem;
+  border: 5px solid var(--white-color);
+}
+
+.customer-say .left-right .left h5 {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+.customer-say .left-right .left p {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.customer-say .right p {
+  font-size: 1.1875rem;
+  text-align: left;
+}
+
+.customer-dotted-left {
+  position: absolute;
+  bottom: 2rem;
+  left: -6rem;
+
+  z-index: -1;
+}
+
+.customer-dotted-right {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+
+  z-index: 2;
+}
+
+.navigator {
+  gap: 4rem;
+  flex-direction: row;
+  margin: 2rem;
+}
+
+.navigator .left-arrow img {
+  /* rotating in 180deg */
+  transform: rotate(180deg);
+  opacity: 0.4;
+}
+
+.dots-container {
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.dots-container .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background: #5b9bf3;
+  opacity: 0.4;
+}
+
+.dots-container .active-dot {
+  opacity: 1;
+}
