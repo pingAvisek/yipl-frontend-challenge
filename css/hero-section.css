@@ -33,3 +33,36 @@
   line-height: 2;
   font-weight: 300;
 }
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-img {
+    margin: 1rem 0;
+  }
+
+  .hero-text {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leading-healthcare-providers-img {
+    width: auto;
+  }
+  .hero-text h2 {
+    width: auto;
+  }
+
+  .hero-text {
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .hero-img img {
+    width: 80%;
+  }
+}

@@ -10,10 +10,11 @@ footer {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 4rem 0;
+  padding: 2rem 0;
   align-content: stretch;
   font-weight: 300;
   font-size: 1.125rem;
+  flex-wrap: wrap;
 }
 
 footer h3 {
@@ -28,6 +29,7 @@ footer a {
 
 footer .cols {
   padding-right: 1rem;
+  margin: 2rem 0;
 }
 
 footer .footer-para p {
@@ -57,4 +59,15 @@ footer .cols:not(:first-child) p {
   right: 2rem;
   top: -4rem;
   z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  #footer .footer-para p {
+    width: auto;
+  }
 }

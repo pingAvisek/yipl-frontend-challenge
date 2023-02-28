@@ -103,3 +103,23 @@
 .dots-container .active-dot {
   opacity: 1;
 }
+
+@media screen and (max-width: 900px) {
+  .customer-say .left-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .customer-say .left {
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .left-right .left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

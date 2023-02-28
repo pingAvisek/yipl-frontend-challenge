@@ -33,3 +33,18 @@
   color: var(--tertiary-color);
   line-height: 1.875;
 }
+
+@media screen and (max-width: 900px) {
+  .leading-healthcare-providers-text {
+    margin-left: 0;
+  }
+
+  .leading-healthcare-providers {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .leading-healthcare-providers-img img {
+    margin-bottom: 2rem;
+  }
+}

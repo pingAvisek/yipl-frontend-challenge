@@ -68,3 +68,18 @@
   margin-bottom: 2rem;
   margin-top: 0.4rem;
 }
+
+@media screen and (max-width: 1000px) {
+  #contact {
+    width: 90%;
+  }
+
+  .left-right {
+    flex-direction: column;
+  }
+
+  .left-right .left,
+  .left-right .right {
+    width: 100%;
+  }
+}

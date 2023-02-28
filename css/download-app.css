@@ -32,3 +32,19 @@
 .download-app .download-app-text h1::after {
   margin: 0;
 }
+
+@media screen and (max-width: 900px) {
+  .download-app {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .download-app .download-app-img img {
+    margin-bottom: 2rem;
+  }
+
+  .download-app .download-app-text {
+    width: 100%;
+    padding: 0;
+  }
+}

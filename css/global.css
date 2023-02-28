@@ -79,3 +79,33 @@ h2 {
   color: var(--dark-color);
   /* margin-bottom: 1rem; */
 }
+
+@media screen and (max-width: 900px) {
+  .light,
+  .linear,
+  .dotted-download-app,
+  .customer-dotted-left,
+  .customer-dotted-right {
+    display: none;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+    margin: 0 2rem;
+  }
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}

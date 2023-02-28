@@ -1,10 +1,13 @@
 nav {
+  position: relative;
   display: flex;
+
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  font-size: calc(1rem + 2px);
+  /* font-size: calc(1rem + 2px); */
+  font-size: 1.125rem;
   margin-bottom: 2rem;
 }
 
@@ -18,7 +21,7 @@ nav .logo-section img {
 
 nav .nav-links ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: c;
   gap: 2.5rem;
   list-style: none;
   flex-wrap: wrap;
@@ -74,3 +77,9 @@ nav .nav-links ul li:hover {
   }
 }
 /* Hover Layout Shift Fix End */
+
+@media screen and (max-width: 1000px) {
+  .nav-links {
+    display: none;
+  }
+}
