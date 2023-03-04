@@ -55,7 +55,7 @@
 
 .customer-say .right p {
   font-size: 1.1875rem;
-  text-align: left;
+  text-align: center;
 }
 
 .customer-dotted-left {
@@ -130,5 +130,11 @@
 
   .customer-say .left {
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .customer-say h1 {
+    font-size: 1.5rem;
   }
 }
