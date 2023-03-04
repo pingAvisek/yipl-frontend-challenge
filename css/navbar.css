@@ -111,9 +111,9 @@ nav .nav-links ul li:hover {
     justify-content: center;
     align-items: flex-start;
     width: 50vw;
-    height: 100vh;
+    height: 100vw;
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease-in;
+    transition: all 0.4s ease-in-out;
   }
 
   .menu-items a {
