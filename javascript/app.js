@@ -7,7 +7,6 @@ for (let i = 0; i < images.length; i++) {
 let menuBtn = document.querySelector(".menu-btn");
 let closeBtn = document.querySelector(".close-btn");
 let navLinks = document.querySelector(".nav-links");
-let body = document.querySelector("body");
 
 menuBtn.addEventListener("click", () => {
   navLinks.classList.toggle("menu-open");
@@ -19,12 +18,4 @@ closeBtn.addEventListener("click", () => {
   navLinks.classList.toggle("menu-open");
   menuBtn.style.display = "block";
   closeBtn.style.display = "none";
-});
-
-body.addEventListener("click", (e) => {
-  if (e.target !== menuBtn && e.target !== closeBtn) {
-    navLinks.classList.remove("menu-open");
-    menuBtn.style.display = "block";
-    closeBtn.style.display = "none";
-  }
 });
