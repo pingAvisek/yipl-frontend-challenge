@@ -1,13 +1,13 @@
 .leading-healthcare-providers {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 3rem 0;
 }
 
 .leading-healthcare-providers-img img {
-  width: 90%;
+  max-width: 90%;
   height: 100%;
   object-fit: cover;
   flex-basis: 50%;
@@ -15,7 +15,7 @@
 
 .leading-healthcare-providers-text {
   flex-basis: 50%;
-  margin-left: 2rem;
+  padding-left: 2rem;
 }
 
 .leading-healthcare-providers-text h1 {
@@ -37,6 +37,10 @@
 @media screen and (max-width: 900px) {
   .leading-healthcare-providers-text {
     margin-left: 0;
+  }
+
+  .leading-healthcare-providers-text {
+    padding: 0;
   }
 
   .leading-healthcare-providers {

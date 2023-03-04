@@ -77,7 +77,6 @@ h2 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--dark-color);
-  /* margin-bottom: 1rem; */
 }
 
 @media screen and (max-width: 900px) {
@@ -94,18 +93,18 @@ h2 {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    width: 95%;
-    margin: 0 2rem;
-  }
-  html {
-    font-size: 12px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   html {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 0 2rem;
+  }
+  html {
+    font-size: 12px;
   }
 }

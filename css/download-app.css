@@ -1,20 +1,13 @@
 .download-app {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 5rem 0;
-  position: relative;
-}
-
-.dotted-download-app {
-  position: absolute;
-  top: -7rem;
-  right: -11.2rem;
+  margin: 5rem auto;
 }
 
 .download-app .download-app-img img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .download-app .download-app-text {
